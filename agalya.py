@@ -96,9 +96,9 @@ print(count)
 #sum of a
 '''
 a=[2,3,2,9,3,3,1,6]
-sum=0
+sum1=0
 for i in a:
-    sum=sum+i
+    sum1=sum1+i
 print(sum1)
 '''
 #count the single value
@@ -138,10 +138,25 @@ for i in range(0,8):
 print(min_val)
 '''
 #duplicate
-a=[2,3,2,9,3,3,1,6]
-dup=a[0]
-for i in range(0,8):
-    if a[i]==dup:
+'''
+a=[2,3,4,2,3,4,4]
+b=[]
+for i in a:
+    if i not in b:
+        b.append(i)
+print(b)
+'''
+#difference between sum of square and square of sum
+'''
+a=int(input('enter the value'))
+sum=0
+sum1=0
+for i in range(1,a+1):
+    sum=sum+i**2
+    sum1=sum1+i
+print(abs(sum-(sum1)**2))
+'''
+
         
 
 
