@@ -8,3 +8,41 @@ if key==7 or key==9:
 else:
     print(keypad[key][(click%3)-1])
 '''
+#to check it is secret code within 3 chance
+'''
+secretno=5
+n=int(input('enter the number'))
+if n==secretno:
+    print('you won')
+else:
+    print('second chance')
+    n2=int(input('enter the number'))
+    if n2==secretno:
+        print('you won')
+    else:
+        print('third chance')
+        n3=int(input('enter the number'))
+        if n3==secretno:
+            print('you won')
+        else:
+            print('not a secretno')
+'''
+secretno=5
+count=0
+while count<3:
+    n=int(input('enter the number'))
+    if n==secretno:
+        print('you won')
+    else:
+        print('try again')
+        count=count+1
+        
+else:
+        print('over')
+
+
+
+
+
+
+    
